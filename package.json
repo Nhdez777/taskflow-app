@@ -1,0 +1,13 @@
+{
+  "name": "taskflow-app",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && nodemon index.js",
+    "dev:client": "cd client && vite"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1"
+  }
+}
